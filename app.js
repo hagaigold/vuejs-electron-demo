@@ -3,7 +3,7 @@ const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 
 let url
-if (process.env.NODE_ENV === 'DEV') {
+if (process.env.NODE_ENV === 'development') {
   url = 'http://localhost:8080/'
 } else {
   url = `file://${process.cwd()}/dist/index.html`
